@@ -1,6 +1,6 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import '../new-project.js';
+import './new-project.js';
 
 describe('NewProject', () => {
   it('has a default title "Hey there" and counter 5', async () => {
