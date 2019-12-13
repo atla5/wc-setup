@@ -1,13 +1,17 @@
-# \<new-project>
+# wc-setup
+auditing setups between various 
+
+
+## \<new-project>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
-## Installation
+### Installation
 ```bash
 npm i new-project
 ```
 
-## Usage
+### Usage
 ```html
 <script type="module">
   import 'new-project/new-project.js';
@@ -16,7 +20,7 @@ npm i new-project
 <new-project></new-project>
 ```
 
-## Testing with Karma
+### Testing with Karma
 To run the suite of karma tests, run
 ```bash
 npm run test
@@ -36,13 +40,13 @@ or
 npm run test:compatibility
 ```
 
-## Testing with Karma via BrowserStack
+### Testing with Karma via BrowserStack
 To run the suite of karma tests in BrowserStack, run
 ```bash
 npm run test:bs
 ```
 
-## Managing Test Snapshots
+### Managing Test Snapshots
 You can manage the test snapshots using
 ```bash
 npm run test:update-snapshots
@@ -52,7 +56,7 @@ or
 npm run test:prune-snapshots
 ```
 
-## Demoing with Storybook
+### Demoing with Storybook
 To run a local instance of Storybook for your component, run
 ```bash
 npm run storybook
@@ -64,7 +68,7 @@ npm run storybook:build
 ```
 
 
-## Local Demo with `es-dev-server`
+### Local Demo with `es-dev-server`
 ```bash
 npm start
 ```
