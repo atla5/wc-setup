@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../new-project.js';
+
+<Meta 
+  title="NewProject"
+  parameters={{
+    component: "new-project",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# NewProject
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add new-project
+```
+
+```js
+import 'new-project/new-project.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <new-project></new-project>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="new-project" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <new-project .title=${'Hello World'}></new-project>
+  `}
+</Story>

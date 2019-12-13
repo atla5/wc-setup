@@ -1,0 +1,31 @@
+{
+  "name": "new-project",
+  "version": "0.0.0",
+  "description": "Webcomponent new-project following open-wc recommendations",
+  "author": "new-project",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "test": "karma start --coverage",
+    "test:watch": "karma start --auto-watch=true --single-run=false",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:prune-snapshots": "karma start --prune-snapshots",
+    "test:bs": "karma start karma.bs.config.js --coverage",
+    "storybook": "start-storybook --node-resolve --watch --open",
+    "storybook:build": "build-storybook"
+  },
+  "dependencies": {
+    "lit-html": "^1.0.0",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.5.0",
+    "@open-wc/testing-karma": "^3.0.0",
+    "webpack-merge": "^4.1.5",
+    "@open-wc/testing-karma-bs": "^1.0.0",
+    "@open-wc/testing": "^2.0.0",
+    "@open-wc/demoing-storybook": "^1.0.1"
+  }
+}
