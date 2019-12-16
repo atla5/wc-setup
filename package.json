@@ -7,7 +7,7 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "analyze": "",
+    "analyze": "wca analyze './src/*-*/*-*.js' --outFile ./custom-elements.json",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "test": "karma start",
     "test:watch": "karma start --auto-watch=true --single-run=false",
