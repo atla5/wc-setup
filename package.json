@@ -15,7 +15,7 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "test:bs": "karma start karma.bs.config.js --coverage",
     "storybook": "start-storybook --node-resolve --watch --open --stories src/**/*.stories.mdx",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook --stories src/**/*.stories.mdx"
   },
   "dependencies": {
     "lit-html": "^1.0.0",

@@ -1,16 +1,16 @@
 import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
 
-import './new-project.js';
+import './bulib-color.js';
 
 <Meta 
-  title="NewProject"
+  title="Web Components/bulib-color"
   parameters={{
-    component: "new-project",
+    component: "bulib-color",
     options: { selectedPanel: "storybookjs/knobs/panel" }
   }}
 />
 
-# NewProject
+# Color Component
 
 A component for...
 
@@ -29,23 +29,23 @@ yarn add new-project
 ```
 
 ```js
-import './new-project.js';
+import './color.js';
 ```
 
 <Preview withToolbar>
-  <Story name="Storybook/Simple">
-    {html`<new-project></new-project>`}
+  <Story name="Value">
+    {html`<bulib-color val="red"></bulib-color>`}
   </Story>
 </Preview>
 
 ## API
 
-<Props of="new-project" />
+<Props of="bulib-color" />
 
 ## Variations
 
 ###### Custom Title
 
-<Story name="Storybook/Custom Title">
-  {html`<new-project .title=${'Hello World'}></new-project>`}
+<Story name="CSS Variable">
+  {html`<bulib-color var="--color-accent-background"></bulib-color>`}
 </Story>
