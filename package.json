@@ -9,7 +9,7 @@
   "scripts": {
     "analyze": "",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
-    "test": "karma start --coverage",
+    "test": "karma start",
     "test:watch": "karma start --auto-watch=true --single-run=false",
     "test:update-snapshots": "karma start --update-snapshots",
     "test:prune-snapshots": "karma start --prune-snapshots",
