@@ -15,8 +15,8 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "test:bs": "karma start karma.bs.config.js --coverage",
     "storybook": "start-storybook --stories 'src/*/*.stories.mdx' --node-resolve --watch --open",
-    "storybook:build": "build-storybook --stories 'src/*/*.stories.mdx'",
-    "start:build": "cd dist && es-dev-server --open",
+    "storybook:build": "build-storybook --stories 'src/*/*.stories.mdx' -o storybook-static",
+    "start:build": "npm run storybook:build && cd storybook-static && es-dev-server --open",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "deploy:storybook": "npm run storybook:build && storybook-to-ghpages"
   },
